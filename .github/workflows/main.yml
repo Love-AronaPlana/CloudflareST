@@ -32,7 +32,7 @@ jobs:
 
       - name: Run TLS scan
         run: |
-          ./CloudflareST -httping -sl 5 -dn 50 -p 50
+          ./CloudflareST -httping -sl 5 -dn 30 -p 30
           python convert_csv_to_tls.py
 
       - name: Commit and push changes
